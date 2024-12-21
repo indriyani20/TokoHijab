@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Hijab</title>
+    <link rel="stylesheet" href="123.css">
+</head>
+<body>
+
+<header>
+    <h1>Toko Hijab</h1>
+    <p>Selamat datang di toko kami!</p>
+</header>
+
+<nav>
+    <a href="#" onclick="showSection('home')">Beranda</a>
+    <a href="#" onclick="showSection('about')">Tentang</a>
+    <a href="#" onclick="showSection('products')">Produk</a>
+    <a href="#" onclick="showSection('cart')">Keranjang</a>
+    <a href="#" onclick="showSection('location')">Lokasi</a>
+</nav>
+
+<div class="container">
+    <div id="home" class="section">
+        <h2>Selamat Datang di Toko Kami!</h2>
+        <p>Temukan berbagai produk menarik dan berkualitas di sini.</p>
+    </div>
+
+    <div id="about" class="section hidden">
+        <h2>Tentang Kami</h2>
+        <p>Kami adalah toko online yang menyediakan berbagai produk berkualitas dengan harga terjangkau. Misi kami adalah memberikan pengalaman belanja yang menyenangkan dan memuaskan bagi pelanggan kami.</p>
+    </div>
+
+    <div id="products" class="section hidden">
+        <h2>Produk Kami</h2>
+        <div class="product">
+            <img src="https://id-test-11.slatic.net/original/3e66302f1aa256fe6f14fa60a6ab206c.jpg" alt="Hijab Muslimah">
+            <h3>Hijab Muslimah</h3>
+            <p>Hijab Muslimah ini terbuat dari bahan berkualitas tinggi yang nyaman dipakai sepanjang hari. 
+                Desainnya yang elegan membuatnya cocok untuk berbagai acara, 
+                baik formal maupun kasual.</p>
+            <p>Harga: Rp 100.000</p>
+            <div class="rating" data-product="Hijab Muslimah">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+                <span class="rating-value">0</span>
+            </div>
+            <button onclick="addToCart('Hijab Muslimah', 100000)">Tambah ke Keranjang</button>
+        </div>
+        <div class="product">
+            <img src="https://ceklist.id/wp-content/uploads/2021/01/Hijab-Instan-Terbaru-Terbaik.jpg" alt="Hijab Instan Terbaik">
+            <h3>Hijab Instan Terbaik</h3>
+            <p>Hijab instan ini dirancang untuk kemudahan dan kenyamanan. 
+                Dengan bahan yang ringan dan mudah dipakai,
+                Anda dapat tampil modis dalam waktu singkat.</p>
+            <p>Harga: Rp 95.000</p>
+            <div class="rating" data-product="Hijab Instan Terbaik">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+                <span class="rating-value">0</span>
+            </div>
+            <button onclick="addToCart('Hijab Instan Terbaik', 95000)">Tambah ke Keranjang</button>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/originals/00/aa/4a/00aa4aee530bdd01663e7134d72e99d0.jpg" alt="Hijab Casual">
+            <h3>Hijab Casual</h3>
+            <p>Hijab Casual ini cocok untuk penggunaan sehari-hari. 
+                Dengan desain yang simpel dan warna yang menarik, 
+                hijab ini akan membuat penampilan Anda lebih stylish dan nyaman.</p>
+            <p>Harga: Rp 100.000</p>
+            <div class="rating" data-product="Hijab Casual">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+                <span class="rating-value">0</span>
+            </div>
+            <button onclick="addToCart('Hijab Casual', 100000)">Tambah ke Keranjang</button>
+        </div>
+    </div>
+
+    <div id="cart" class="section hidden">
+        <h2>Keranjang Belanja</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: Rp 0</p>
+    </div>
+
+    <div id="location" class="section hidden">
+        <h2>Lokasi Toko Kami</h2>
+        <p>Kami berlokasi di:</p>
+        <p>Jl.Gelam Timur, Tangerang, Banten, Indonesia</p>
+        <p>Anda dapat mengunjungi Toko kami setiap hari dari pukul 08.00 hingga 00.00.</p>
+        <p>Untuk informasi lebih lanjut, silakan hubungi kami melalui email atau telepon yang tertera di bawah.</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.123456789012!2d106.123456789012!3d-6.123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1234567890abcdef%3A0x1234567890abcdef!2sToko%20Hijab!5e0!3m2!1sen!2sid!4v1234567890123" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Toko Hijab</p>
+    <p>Email: info@tokohijab.com</p>
+    <p>Telepon: 0812-3456-7890</p>
+</footer>
+
+<script src="20.js"></script>
+<script>

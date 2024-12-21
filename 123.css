@@ -1,0 +1,95 @@
+body {
+    background :url(hijab1.png);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #ebddaf;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background: #ede2b0;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Menambahkan garis bawah saat hover */
+}
+
+.container {
+    width: 65%;
+    margin: 15px auto;
+}
+
+.section {
+    display: none; /* Sembunyikan semua section */
+}
+
+.section.hidden {
+    display: none; /* Sembunyikan section yang memiliki kelas 'hidden' */
+}
+
+.product {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: inline-block; /* Tampilkan produk dalam baris */
+    width: calc(30% - 40px); /* Lebar produk */
+}
+
+.product img {
+    width: 100%; /* Mengatur lebar gambar agar sesuai dengan kontainer */
+    height: 150px; /* Mengatur tinggi gambar untuk konsistensi */
+    object-fit: cover; /* Memastikan gambar terpotong dengan baik */
+    border-radius: 25px; /* Membulatkan sudut gambar */
+}
+
+.product h3 {
+    font-size: 18px; /* Ukuran font untuk judul produk */
+    margin: 10px 0; /* Margin untuk jarak antara judul dan deskripsi */
+}
+
+.product p {
+    font-size: 14px; /* Ukuran font untuk deskripsi produk */
+    color: #555; /* Warna teks deskripsi */
+    margin: 5px 0; /* Margin untuk jarak antara deskripsi dan harga */
+}
+
+.rating {
+    cursor: pointer;
+    color: #f39c12;
+    font-size: 20px;
+    margin: 0 2px; /* Jarak antar bintang rating */
+}
+
+.current-rating {
+    margin-top: 10px;
+}
+
+/* Tambahan untuk footer */
+footer {
+    text-align: center; /* Pusatkan teks footer */
+    padding: 20px 0; /* Padding untuk footer */
+    background: #fcecc2c9; /* Warna latar belakang footer */
+    color: #ffffff; /* Warna teks footer */
+    position: relative; /* Posisi relatif untuk footer */
+    bottom: 0; /* Menempatkan footer di bagian bawah */
+    width: 100%; /* Lebar footer 100% */
+}
